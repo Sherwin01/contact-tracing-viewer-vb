@@ -1,4 +1,9 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Imports AForge
+Imports AForge.Video
+Imports AForge.Video.DirectShow
+Imports ZXing
+Public Class Form1
     Private Sub addbtn_Click(sender As Object, e As EventArgs) Handles addbtn.Click
         lb1.Items.Add(tb1.Text)
 
