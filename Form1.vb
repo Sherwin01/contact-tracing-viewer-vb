@@ -56,6 +56,7 @@ Public Class Form1
             CAMERA = cameras.VideoDevice
             AddHandler CAMERA.NewFrame, New NewFrameEventHandler(AddressOf Captured)
             CAMERA.Start()
+            Timer1.Start()
         End If
     End Sub
 
