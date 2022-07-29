@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.addbtn = New System.Windows.Forms.Button()
         Me.savebtn = New System.Windows.Forms.Button()
         Me.clearbtn = New System.Windows.Forms.Button()
@@ -38,6 +39,7 @@ Partial Class Form1
         Me.getfilebtn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.startbtn = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -180,6 +182,10 @@ Partial Class Form1
         Me.startbtn.Text = "Start"
         Me.startbtn.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -224,4 +230,5 @@ Partial Class Form1
     Friend WithEvents getfilebtn As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents startbtn As Button
+    Friend WithEvents Timer1 As Timer
 End Class

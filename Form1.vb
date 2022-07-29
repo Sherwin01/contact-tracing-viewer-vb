@@ -64,4 +64,25 @@ Public Class Form1
         PictureBox1.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
     End Sub
 
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If CAMERA.IsRunning Then
+            CAMERA.Stop()
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If PictureBox1.Image IsNot Nothing Then
+            Dim barcodereader As BarcodeReader = New BarcodeReader()
+            Dim result As Result = barcodereader.Decode(CType(PictureBox1.Image, Bitmap))
+
+            If result IsNot Nothing Then
+                MsgBox("QR code is Detected!")
+                lb1.Text = result.ToString()
+                Timer1.Stop()
+                If CAMERA.IsRunning Then
+                    CAMERA.Stop()
+                End If
+            End If
+        End If
+    End Sub
 End Class
