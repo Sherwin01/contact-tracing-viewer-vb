@@ -4,6 +4,8 @@ Imports AForge.Video
 Imports AForge.Video.DirectShow
 Imports ZXing
 Public Class Form1
+    Dim CAMERA As VideoCaptureDevice
+    Dim bmp As Bitmap
     Private Sub addbtn_Click(sender As Object, e As EventArgs) Handles addbtn.Click
         lb1.Items.Add(tb1.Text)
 
@@ -47,4 +49,19 @@ Public Class Form1
         fileReader.Close()
 
     End Sub
+
+    Private Sub startbtn_Click(sender As Object, e As EventArgs) Handles startbtn.Click
+        Dim cameras As VideoCaptureDeviceForm = New VideoCaptureDeviceForm
+        If cameras.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            CAMERA = cameras.VideoDevice
+            AddHandler CAMERA.NewFrame, New NewFrameEventHandler(AddressOf Captured)
+            CAMERA.Start()
+        End If
+    End Sub
+
+    Private Sub Captured(sender As Object, eventArgs As NewFrameEventArgs)
+        bmp = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+        PictureBox1.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+    End Sub
+
 End Class

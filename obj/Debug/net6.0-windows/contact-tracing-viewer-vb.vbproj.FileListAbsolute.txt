@@ -15,3 +15,8 @@ C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tr
 C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\obj\Debug\net6.0-windows\contact-tracing-viewer-vb.pdb
 C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\obj\Debug\net6.0-windows\contact-tracing-viewer-vb.genruntimeconfig.cache
 C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\obj\Debug\net6.0-windows\ref\contact-tracing-viewer-vb.dll
+C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\Lim\OneDrive\Desktop\vbassignment3\contact-tracing-viewer-vb\contact-tracing-viewer-vb\obj\Debug\net6.0-windows\contact-tracing-viewer-vb.vbproj.CopyComplete
