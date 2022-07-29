@@ -36,6 +36,9 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.getfilebtn = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.startbtn = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'addbtn
@@ -160,11 +163,30 @@ Partial Class Form1
         Me.getfilebtn.Text = "Get File"
         Me.getfilebtn.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(446, 63)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(342, 347)
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = False
+        '
+        'startbtn
+        '
+        Me.startbtn.Location = New System.Drawing.Point(332, 287)
+        Me.startbtn.Name = "startbtn"
+        Me.startbtn.Size = New System.Drawing.Size(75, 23)
+        Me.startbtn.TabIndex = 17
+        Me.startbtn.Text = "Start"
+        Me.startbtn.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.startbtn)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.getfilebtn)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -181,6 +203,7 @@ Partial Class Form1
         Me.Controls.Add(Me.addbtn)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -199,4 +222,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents getfilebtn As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents startbtn As Button
 End Class
